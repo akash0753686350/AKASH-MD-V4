@@ -51,7 +51,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/yj7zp0.png' },
+                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/5rujjj.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
@@ -73,7 +73,7 @@ cmd({
                 await conn.sendMessage(from, {
                     audio: { url: 'https://files.catbox.moe/wzodz1.mp3' },
                     mimetype: 'audio/mp4',
-                    ptt: true,
+                    ptt: true
                 }, { quoted: mek });
             } catch (e) {
                 console.log('Audio send failed, continuing without it');
@@ -418,7 +418,7 @@ cmd({
                                 await conn.sendMessage(
                                     senderID,
                                     {
-                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/yj7zp0.png' },
+                                        image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/5rujjj.jpg' },
                                         caption: selectedMenu.content,
                                         contextInfo: contextInfo
                                     },

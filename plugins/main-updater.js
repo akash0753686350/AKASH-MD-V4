@@ -16,20 +16,20 @@ cmd({
     if (!isOwner) return reply("This command is only for the bot owner.");
 
     try {
-        await reply("🔍 Checking for Arslan_MD updates...");
+        await reply("🔍 Checking for AKASH-MD-V4 updates...");
 
         // Fetch the latest commit hash from GitHub
-        const { data: commitData } = await axios.get("https://api.github.com/repos/Arslan-MD/Arslan_MD/commits/main");
+        const { data: commitData } = await axios.get("https://api.github.com/repos/AKASH-MD-V4/AKASH-MD-V4/commits/main");
         const latestCommitHash = commitData.sha;
 
         // Get the stored commit hash from the database
         const currentHash = await getCommitHash();
 
         if (latestCommitHash === currentHash) {
-            return reply("✅ Your 𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃 bot is already up-to-date! BY ArslanMD Official");
+            return reply("✅ Your AKASH-MD-V4 bot is already up-to-date! BY AKASH-MD-V4 Official");
         }
 
-        await reply("🚀 Updating 𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃 Bot...");
+        await reply("🚀 Updating AKASH-MD-V4 Bot...");
 
         // Download the latest code
         const zipPath = path.join(__dirname, "latest.zip");
@@ -44,7 +44,7 @@ cmd({
 
         // Copy updated files, preserving config.js and app.json
         await reply("🔄 Replacing files...");
-        const sourcePath = path.join(extractPath, "Arslan_MD-main");
+        const sourcePath = path.join(extractPath, "AKASH-MD-V4-main");
         const destinationPath = path.join(__dirname, '..');
         copyFolderSync(sourcePath, destinationPath);
 

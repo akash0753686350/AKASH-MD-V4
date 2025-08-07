@@ -1,12 +1,12 @@
 {
-  "name": "Your-Own-Bot",
+  "name": "AKASH-MD-V4",
   "version": "4.5.0",
-  "description": "A WhatsApp Bot Created By ArslanMD Official",
+  "description": "A WhatsApp Bot Created By AkashMD Official",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Your-Own-Bot",
-    "stop": "pm2 stop Your-Own-Bot",
-    "restart": "pm2 restart Your-Own-Bot"
+    "start": "pm2 start index.js --deep-monitoring --attach --name AKASH-MD-V4",
+    "stop": "pm2 stop AKASH-MD-V4",
+    "restart": "pm2 restart AKASH-MD-V4"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "npm:baileys-pro@latest",
